@@ -1,25 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-brnni">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwindcss -->
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- css -->
+    <link rel="stylesheet" href="src/style.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- font popins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- script -->
-    <script src="./src/main.js"></script>
-    <title>Portifolio</title>
+    <script defer src="./src/main.js"></script>
+    <title>Portfolio</title>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <header>
+        <div class="flex fixed w-full bg-black px-4 py-2 font-poppins text-white md:px-20">
+            <div class="container flex items-center mx-auto">
+                <div>
+                    <a href="#home" class="font-bold cursor-pointer hover:text-amber-400 duration-500">Portfólio</a>
+                </div>
 
+                <div class="items-end flex-1 flex">
+                    <nav class="flex-1">
+                        <ul class="flex justify-end flex-1">
+                          <li class="mx-4">
+                            <a class="hover:text-amber-400 duration-500 text-base" href="#home">Home</a>
+                          </li>
+                          <li class="mx-4">
+                            <a class="hover:text-amber-400 duration-500 text-base" href="#home">Projetos</a>
+                          </li>
+                          <li class="mx-4">
+                            <a class="hover:text-amber-400 duration-500 text-base" href="#home">Experiência</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <section id="Home">
+            <div class="flex items-center justify-center py-40 px-4 bg-amber-500 font-poppins home">
+                <div class=" flex flex-col">
+                    <div class="flex flex-row flex-nowrap">
+                        <div>
+                            <h1 class="text-5xl mx-4 font-bold">Ronaldo Fidelis</h1>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#">
+                                    <img class="h-6 icon_link" src="public/img/git.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img class="h-6 icon_link" src="public/img/linkedin.png" alt="">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm text-right">Desenvolvedor Full-Stack em desenvolvimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Projetos">
+            <div class="flex flex-col justify-center items-center">
+                <div class=" mt-5 flex flex-col text-center">
+                    <h2 class="text-lg font-medium font">Meus Projetos</h2>
+                    <span class="text-gray-500 text-sm">My Project</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
