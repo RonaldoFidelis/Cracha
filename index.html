@@ -19,77 +19,120 @@
     <script defer src="./src/main.js"></script>
     <title>Portfolio | Ronaldo Fidelis</title>
 </head>
-<html>
-<!-- Navbar -->
-<header>
-    <nav class=" fixed w-full md:flex md:items-center md:justify-between bg-black text-white px-4 md:py-2 font-poppins">
-        <div class="flex justify-between items-center">
-            <span class="text-2xl font-semibold">
-                <a class="cursor-pointer" href="#home">Portfólio</a>
-            </span>
-            <!-- icone de close
-                    <i class="fa-solid fa-xmark"></i>
-                -->
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <i id="Menu" class="fa-solid fa-bars" onclick="Menu(this)"></i>
-            </span>
-        </div>
+<body class="flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <header>
+        <nav class=" fixed w-full md:flex md:items-center md:justify-between bg-black text-white px-4 md:py-2 font-poppins">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-semibold">
+                    <a class="cursor-pointer" href="#home">Portfólio</a>
+                </span>
+                <!-- icone de close
+                        <i class="fa-solid fa-xmark"></i>
+                    -->
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <i id="Menu" class="fa-solid fa-bars" onclick="Menu(this)"></i>
+                </span>
+            </div>
 
-        <ul
-            class="md:flex md:items-center z-[-1] md:z-auto absolute md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] bg-black">
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#home" class="text-base hover:text-amber-500 duration-500">Home</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#projeto" class="text-base hover:text-amber-500 duration-500">Projetos</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-base hover:text-amber-500 duration-500">Experiência</a>
-            </li>
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto absolute md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] bg-black">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#home" class="text-base hover:text-amber-500 duration-500">Home</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#projeto" class="text-base hover:text-amber-500 duration-500">Projetos</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#qualificacoes" class="text-base hover:text-amber-500 duration-500">Qualificações</a>
+                </li>
 
-            <button class="bg-amber-400 text-white px-6 py-1 mx-4 my-2 rounded hover:bg-amber-500 duration-500 ">
-                <a download="" href="public/CV-RonaldoRafaelFidelis-Desenvolvedor.pdf">CV</a>
-            </button>
-        </ul>
-    </nav>
-</header>
-<!-- conteudo -->
-<main>
-    <!-- home -->
-    <section id="home">
-        <div class="flex justify-center items-center py-40 px-4 bg-amber-500 font-poppins">
-            <div class=" flex flex-col">
-                <div class="flex md:flex-row">
-                    <div>
-                        <h1 class="text-4xl md:text-5xl mx-4 font-bold">
-                        Ronaldo Fidelis</h1>
+                <button class="bg-amber-400 text-white px-6 py-1 mx-4 my-2 rounded hover:bg-amber-500 duration-500 ">
+                    <a download="" href="public/CV-RonaldoRafaelFidelis-Desenvolvedor.pdf">CV</a>
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <!-- conteudo -->
+    <main>
+        <!-- home -->
+        <section id="home">
+            <div class="flex justify-center items-center py-40 px-4 bg-amber-500 font-poppins">
+                <div class=" flex flex-col">
+                    <div class="flex md:flex-row">
+                        <div>
+                            <h1 class="text-4xl md:text-5xl mx-4 font-bold">
+                                Ronaldo Fidelis</h1>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="https://github.com/RonaldoFidelis" target="_blank">
+                                    <img class="h-6 icon_link" src="public/img/git.png" alt="Git">
+                                </a>
+                                <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank">
+                                    <img class="h-6 icon_link" src="public/img/linkedin.png" alt="linkedin">
+                                </a>
+                            </span>
+                        </div>
                     </div>
                     <div>
-                        <span>
-                            <a href="https://github.com/RonaldoFidelis" target="_blank">
-                                <img class="h-6 icon_link" src="public/img/git.png" alt="Git">
-                            </a>
-                            <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank">
-                                <img class="h-6 icon_link" src="public/img/linkedin.png" alt="linkedin">
-                            </a>
-                        </span>
+                        <p class="text-xs md:text-sm font-semibold text-right">Programador Full-Stack em desenvolvimento.
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <p class="text-xs md:text-sm font-semibold text-right">Programador Full-Stack em desenvolvimento.</p>
+            </div>
+        </section>
+        <!-- Projeto -->
+        <section id="projeto">
+            <div class="flex m-5 items-center justify-center bg-white font-poppins">
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-lg text-black font-medium">Meus Projetos</h2>
+                    <h3 class="text-sm text-gray-500">My Projects</h3>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Projeto -->
-    <section id="projeto">
-        <div class="flex mt-4 items-center justify-center bg-white font-poppins">
-            <div class="flex flex-col justify-center items-center">
-                <h2 class="text-lg text-black font-medium">Meus Projetos</h2>
-                <h3 class="text-sm text-gray-500">My Projects</h3>
+        </section>
+        <!-- Experiência -->
+        <section id="qualificacoes">
+            <div class="flex m-5 items-center justify-center bg-white font-poppins">
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-lg text-black font-medium">Qualificações</h2>
+                    <h3 class="text-sm text-gray-500">Qualification</h3>
+                </div>
             </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="text-white bg-black font-poppins">
+        <div class="grid grid-cols-1 md:grid-cols-3 p-4 md:p-10 ">
+            <div class="md:col-span-1 pt-10 md:pt-0">
+                <h2 class="text-lg leading-none font-semibold ">Ronaldo Fidelis</h2>
+                <h3 class="text-xs text-gray-400">Programador Full-Stack</h3>
+                <ul class="mt-3">
+                    <h3>Contatos:</h3>
+                    <li class="text-xs text-gray-500 leading-relaxed">
+                        <p>Whatsap: (81) 98516-2273</p>
+                    </li>
+                    <li class="text-xs  text-gray-500 leading-relaxed">
+                        <p>Recado: (81) 99517-6649</p>
+                    </li>
+                    <li class="text-xs  text-gray-500 leading-relaxed">
+                        <p>E-mail: Ronaldofidelis.ti@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 pt-10 md:pt-2">
+                <ul class="flex md:justify-end">
+                  <li class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full mx-2 hover:text-amber-500 duration-500">
+                    <a href="https://github.com/RonaldoFidelis" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  </li>
+                  <li class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full mx-2  hover:text-amber-500 duration-500">
+                    <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:col-span-3 mt-20">
+                <p class="flex justify-center text-gray-500 text-xs"><a  class="cursor-pointer" href="https://github.com/RonaldoFidelis" target="_blank">&copy; Ronaldo Fidelis 2023</a></p>
+              </div>
         </div>
-    </section>
-</main>
-
-</html>
+    </footer>
+</body>
