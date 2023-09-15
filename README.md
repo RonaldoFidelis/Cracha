@@ -7,6 +7,10 @@
 
 > Teste você mesmo: <a href="#" target="_blank">Portifolio</a>
 
+## Objetivo
+
+- O principal objetivo desse projeto é apronfudar conceito de Media queries com Css e Tailwindcss,criando um portfólio totalmente responsivo as mais variadas telas.
+
 ## 🚀 Tecnologias usadas:
 
 * **[ Javascript ](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**
@@ -17,5 +21,5 @@
 
 ## 📝 Maiores aprendizados
 
-* Deploy com o vercel
-* Responsividade e configuração de ambiente com Taildwindcss
+* Media Queries Css e Tailwindcss
+* Configuração de ambiente com Taildwindcss
