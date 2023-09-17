@@ -2,14 +2,19 @@
 
 <br>
 
+[cap-portfolio.webm](https://github.com/RonaldoFidelis/Portifolio-pessoal/assets/92171641/c9d841de-bcc7-489e-adbd-4534e7aca340)
 
 <br>
 
-> Teste você mesmo: <a href="https://portfolio-ronaldo-fidelis.netlify.app/" target="_blank">Portifolio</a>
+> Acessar portfolio: <a href="https://portfolio-ronaldo-fidelis.netlify.app/" target="_blank">Link</a>
 
+## Desenvolvido por: Ronaldo Fidelis:
+-  Contatos:
+    - <a href="ronaldofidelis.ti@gmail.com" target="_blank">E-mail</a>
+    - <a href="https://github.com/RonaldoFidelis" target="_blank">GitHub</a>  
 ## Objetivo
 
-- O principal objetivo desse projeto é apronfudar conceito de Media queries com Css e Tailwindcss,criando um portfólio totalmente responsivo as mais variadas telas.
+- O principal objetivo foi desenvolver um portfolio pessoal, totalmente responsivo.
 
 ## 🚀 Tecnologias usadas:
 
@@ -23,3 +28,5 @@
 
 * Media Queries Css e Tailwindcss
 * Configuração de ambiente com Taildwindcss
+
+
