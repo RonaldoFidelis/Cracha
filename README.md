@@ -1,4 +1,4 @@
-<h1 align=center> PORTIFOLIO PESSOAL (Em andamento)</h1>
+<h1 align=center> PORTIFOLIO PESSOAL (Em desenvolvimento)</h1>
 
 <br>
 
