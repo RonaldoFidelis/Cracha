@@ -8,7 +8,7 @@
 
 > Acessar portfolio: <a href="https://portfolio-ronaldo-fidelis.netlify.app/" target="_blank">Link</a>
 
-## Desenvolvido por: Ronaldo Fidelis:
+## Desenvolvido por: Ronaldo Fidelis
 -  Contatos:
     - <a href="mailto:ronaldofidelis.ti@gmail.com" target="_blank">E-mail</a>
     - <a href="https://github.com/RonaldoFidelis" target="_blank">GitHub</a>  
