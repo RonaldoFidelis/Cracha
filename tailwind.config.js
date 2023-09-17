@@ -10,11 +10,14 @@ module.exports = {
         'poppins': ["'Poppins', sans-serif"]
       },
       width: {
-        'card': '330px'
+        'md-card': '350px',
+        'card': '200px'
       },
       height: {
-        'card':'500px',
-        'imgCard': '350px'
+        'md-card':'400px',
+        'md-imgCard': '350px',
+        'content':'100px',
+        'imgCard':'370px'
       }
     },
   },
