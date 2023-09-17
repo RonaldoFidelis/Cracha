@@ -10,7 +10,7 @@
 
 ## Desenvolvido por: Ronaldo Fidelis:
 -  Contatos:
-    - <a href="ronaldofidelis.ti@gmail.com" target="_blank">E-mail</a>
+    - <a href="mailto:ronaldofidelis.ti@gmail.com" target="_blank">E-mail</a>
     - <a href="https://github.com/RonaldoFidelis" target="_blank">GitHub</a>  
 ## Objetivo
 
