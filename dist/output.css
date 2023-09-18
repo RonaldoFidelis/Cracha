@@ -590,6 +590,14 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -622,8 +630,16 @@ video {
   height: 3rem;
 }
 
+.h-50px {
+  height: 50px;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-90px {
+  height: 92px;
 }
 
 .min-h-screen {
@@ -632,6 +648,14 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.w-90px {
+  width: 92px;
 }
 
 .w-full {
@@ -650,6 +674,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -666,12 +694,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -684,6 +716,15 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-amber-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
 }
 
 .bg-amber-400 {
@@ -706,9 +747,9 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
@@ -743,6 +784,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-4 {
@@ -898,7 +944,7 @@ video {
   }
 
   50% {
-    transform: translatey(-4px);
+    transform: translatey(-7px);
   }
 
   100% {
@@ -913,6 +959,16 @@ video {
 
 .img_card{
   border-radius: 0px 0px 10px 10px;
+}
+
+.card-hability{
+  border-radius: 10px 0px 0px 0px;
+  box-shadow: 0px 0px 2px rgb(160, 160, 160);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-hability:hover{
+  transform: scale(1.25,1.25);
 }
 
 .hover\:bg-amber-500:hover {
@@ -980,6 +1036,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -1041,4 +1101,4 @@ video {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
+}   
