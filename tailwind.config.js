@@ -11,10 +11,12 @@ module.exports = {
       },
       width: {
         '90px':'92px',
+        'larguraMd':'110px',
         '50px':'50px'
       },
       height: {
         '90px':'92px',
+        'alturaMd':'110px',
         '50px':'50px'
       }
     },

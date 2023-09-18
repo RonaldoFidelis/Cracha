@@ -36,12 +36,14 @@
     border-radius: 0px 0px 10px 10px;
 }
 
-.card-hability{
+.card-skills{
     border-radius: 10px 0px 0px 0px;
     box-shadow: 0px 0px 2px rgb(160, 160, 160);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    transition: transform 0.3s
 }
 
-.card-hability:hover{
-    transform: scale(1.25,1.25);
-}   
+.card-skills:hover{
+    transform: scale(1.2);
+    z-index:1;
+}  

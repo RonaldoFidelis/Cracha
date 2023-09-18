@@ -554,6 +554,10 @@ video {
   top: 30px;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-\[-1\] {
   z-index: -1;
 }
@@ -574,6 +578,11 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-2 {
@@ -702,8 +711,8 @@ video {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -961,14 +970,16 @@ video {
   border-radius: 0px 0px 10px 10px;
 }
 
-.card-hability{
+.card-skills{
   border-radius: 10px 0px 0px 0px;
   box-shadow: 0px 0px 2px rgb(160, 160, 160);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+  transition: transform 0.3s
 }
 
-.card-hability:hover{
-  transform: scale(1.25,1.25);
+.card-skills:hover{
+  transform: scale(1.2);
+  z-index:1;
 }
 
 .hover\:bg-amber-500:hover {
@@ -1020,8 +1031,16 @@ video {
     display: none;
   }
 
+  .md\:h-alturaMd {
+    height: 110px;
+  }
+
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-larguraMd {
+    width: 110px;
   }
 
   .md\:grid-cols-2 {
@@ -1048,6 +1067,10 @@ video {
     justify-content: flex-end;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -1056,9 +1079,8 @@ video {
     padding: 2.5rem;
   }
 
-  .md\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:py-0 {
@@ -1106,4 +1128,4 @@ video {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}   
+}  
