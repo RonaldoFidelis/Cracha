@@ -727,6 +727,11 @@ video {
   border-color: rgb(245 158 11 / var(--tw-border-opacity));
 }
 
+.border-indigo-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(67 56 202 / var(--tw-border-opacity));
+}
+
 .bg-amber-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
@@ -969,6 +974,11 @@ video {
 
 .card-hability:hover{
   transform: scale(1.25,1.25);
+}
+
+.hover\:border-amber-500:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
 }
 
 .hover\:bg-amber-500:hover {
