@@ -23,6 +23,7 @@ module.exports = {
         'black':'#000000',
         'main':'#000C24',
         'second':'#011140',
+        'ft':'#38B6FF',
         'border': '#016394',
         'git':'#9C34C2',
         'linkedin':'#0078D4'
