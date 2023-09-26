@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <header>
         <nav
-            class=" fixed w-full md:flex md:items-center md:justify-between bg-black text-white px-4 md:py-2 font-poppins z-20">
+            class="nav fixed w-full md:flex md:items-center md:justify-between bg-white text-black px-4 md:py-2 font-poppins z-20">
             <div class="flex justify-between items-center">
                 <span class="text-2xl font-semibold">
                     <a class="cursor-pointer" href="#home">Portfólio</a>
@@ -32,27 +32,28 @@
                 <!-- icone de close
                         <i class="fa-solid fa-xmark"></i>
                     -->
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <i id="Menu" class="fa-solid fa-bars" onclick="Menu(this)"></i>
+                <span class="display-bar-mob text-3xl cursor-pointer mx-2 md:hidden block">
+                    <i id="Menu" class="menu-hamburguer fa-solid fa-bars" onclick="Menu(this)"></i>
                 </span>
             </div>
 
             <ul
-                class="md:flex md:items-center z-[-1] md:z-auto absolute md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] bg-black">
+                class="md:flex md:items-center z-[-1] md:z-auto absolute md:static w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] bg-white" 
+                id="nav-mob">
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#home" class="text-base hover:text-amber-500 duration-500">Home</a>
+                    <a href="#home" class=" text-base hover:after-underline" onclick="Close()">Home</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#habilidades" class="text-base hover:text-amber-500 duration-500">Habilidades</a>
+                    <a href="#habilidades" class="text-base hover:after-underline" onclick="Close()">Habilidades</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#projetos" class="text-base hover:text-amber-500 duration-500">Projetos</a>
+                    <a href="#projetos" class="text-base hover:after-underline" onclick="Close()">Projetos</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#experiencia" class="text-base hover:text-amber-500 duration-500">Experiência</a>
+                    <a href="#experiencia" class="text-base hover:after-underline" onclick="Close()">Experiência</a>
                 </li>
 
-                <a class="bg-amber-400 text-white px-6 py-1 mx-4 my-2 rounded hover:bg-amber-500 duration-500 "
+                <a class="bg-gray-400 text-black px-6 py-1 mx-4 my-2 rounded hover:bg-second hover:text-white duration-500 "
                     download="" href="public/CV-RONALDOFIDELIS-DEVFULLSTACK.pdf">
                     <button>
                         CV
@@ -66,27 +67,26 @@
     <main>
         <!-- home -->
         <section id="home">
-            <div class="flex justify-center items-center py-40 px-4 bg-amber-500 font-poppins">
+            <div class="min-h-screen flex justify-center items-center py-40 px-4 bg-main font-poppins text-white">
                 <div class=" flex flex-col">
                     <div class="flex md:flex-row">
                         <div>
-                            <h1 class="text-4xl md:text-5xl mx-4 font-bold">
+                            <h1 class="text-4xl sm:text-5xl md:text-7xl  mx-4 font-bold">
                                 Ronaldo Fidelis</h1>
                         </div>
                         <div>
                             <span>
                                 <a href="https://github.com/RonaldoFidelis" target="_blank">
-                                    <img class="h-6 icon_link" src="public/img/git.png" alt="Git">
+                                    <img class="h-6 md:h-7 icon_link" src="public/img/git.svg" alt="Git">
                                 </a>
-                                <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank">
-                                    <img class="h-6 icon_link" src="public/img/linkedin.png" alt="linkedin">
+                                <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank" class="">
+                                    <img class="h-6 md:h-7 icon_link" src="public/img/linkedin.svg" alt="linkedin">
                                 </a>
                             </span>
                         </div>
                     </div>
                     <div>
-                        <p class="text-xs md:text-sm font-semibold text-right">Programador Full-Stack em
-                            desenvolvimento.
+                        <p class="text-xs sm:text-sm md:text-lage font-semibold text-right">Desenvolvedor Front-end & Back-end 
                         </p>
                     </div>
                 </div>
@@ -94,102 +94,102 @@
         </section>
         <!-- Habilidades -->
         <section id="habilidades">
-            <div class="flex flex-col items-center justify-center bg-white font-poppins mb-20">
+            <div class="flex flex-col items-center justify-center bg-white font-poppins mb-20 mt-10">
                 <div class="flex flex-col p-4 justify-center items-center">
-                    <h2 class="text-lg text-black font-medium">Habilidades</h2>
-                    <h3 class="text-sm text-gray-500">Skills</h3>
+                    <h2 class="text-lg text-center text-black font-semibold">Habilidades</h2>
+                    <h3 class="text-sm text-center text-gray-500">Skills</h3>
                 </div>
 
-                <div class="flex flex-row flex-wrap justify-center items-center mx-auto gap-6 md:p-4">
+                <div class="flex flex-wrap justify-center items-center gap-5">
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Javascript</p>
                         <img class="w-50px h-50px" src="public/img/js.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <p class="border-border w-full border-2 mt-1"></p>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Python</p>
                         <img class="w-50px h-50px" src="public/img/python.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Typescript</p>
                         <img class="w-50px h-50px" src="public/img/typescript.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">HTML</p>
                         <img class="w-50px h-50px" src="public/img/html.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">CSS</p>
                         <img class="w-50px h-50px" src="public/img/css.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">ReactJS</p>
                         <img class="w-50px h-50px" src="public/img/react.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Node.js</p>
                         <img class="w-50px h-50px" src="public/img/node.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Express.js</p>
                         <img class="w-50px h-50px" src="public/img/expressjs.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Docker</p>
                         <img class="w-50px h-50px" src="public/img/docker.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">MySQL</p>
                         <img class="w-50px h-50px" src="public/img/mysql.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">MongoDB</p>
                         <img class="w-50px h-50px" src="public/img/mongodb.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Tailwind</p>
                         <img class="w-50px h-50px" src="public/img/tailwind.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Sass</p>
                         <img class="w-50px h-50px" src="public/img/sass.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Bootstrap</p>
                         <img class="w-50px h-50px" src="public/img/bootstrap.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
                     <div
                         class="card-skills w-90px h-90px md:w-larguraMd md:h-alturaMd flex flex-col text-black font-medium bg-gray-300 cursor-pointer justify-center items-center px-3 py-2 overflow-hidden">
                         <p class="">Figma</p>
                         <img class="w-50px h-50px" src="public/img/figma.svg">
-                        <span class="border-amber-500 w-full border-2 mt-1"></span>
+                        <span class="border-border w-full border-2 mt-1"></span>
                     </div>
 
                 </div>
@@ -199,10 +199,10 @@
         <section id="projetos">
             <div class="flex flex-col items-center justify-center bg-white font-poppins mb-20">
                 <div class="flex flex-col p-4 justify-center items-center">
-                    <h2 class="text-lg text-black font-medium">Projetos</h2>
+                    <h2 class="text-lg text-black font-bold">Projetos</h2>
                     <h3 class="text-sm text-gray-500">Projects</h3>
                 </div>
-                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 m-5">
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 m-5">
                     <!-- Projeto 01 -->
                     <div class="max-w-md w-full rounded overflow-hidden shadow-lg bg-white">
                         <img src="public/img/api-todo.png" alt="Imagem do Projeto" class="w-full">
@@ -215,7 +215,7 @@
                         </div>
                         <div class="px-6 py-4">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://github.com/RonaldoFidelis/Api-ToDo/"
                                     target="_blank">Repositorio</a>
                             </span>
@@ -232,11 +232,11 @@
                         </div>
                         <div class="px-6 py-4">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://github.com/RonaldoFidelis/snake-game" target="_blank">Repositorio</a>
                             </span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://jogodacobrinharf.netlify.app/" target="_blank">Testar</a>
                             </span>
                         </div>
@@ -253,12 +253,12 @@
                         </div>
                         <div class="px-6 py-4">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://github.com/RonaldoFidelis/Calculadora_ReactJs"
                                     target="_blank">Repositorio</a>
                             </span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://superlative-puppy-307ea3.netlify.app/" target="_blank">Testar</a>
                             </span>
                         </div>
@@ -274,12 +274,12 @@
                         </div>
                         <div class="px-6 py-4">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://github.com/RonaldoFidelis/Open-Weather"
                                     target="_blank">Repositorio</a>
                             </span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://magenta-moxie-79035e.netlify.app/" target="_blank">Testar</a>
                             </span>
                         </div>
@@ -295,12 +295,12 @@
                         </div>
                         <div class="px-6 py-4">
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://github.com/RonaldoFidelis/Spotify-Clone"
                                     target="_blank">Repositorio</a>
                             </span>
                             <span
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://spotify-clone-ct9u3jk84-ronaldofidelis.vercel.app/ " target="_blank">Testar</a>
                             </span>
                         </div>
@@ -309,7 +309,7 @@
                     <div class="col-span-1 md:col-span-2 lg:col-span-3 mt-5">
                         <div class="flex items-center justify-center">
                             <span
-                                class="px-3 py-1 rounded-full font-semibold bg-gray-200 text-gray-600 hover:bg-amber-500 duration-500 hover:text-white">
+                                class="px-3 py-1 rounded-full font-semibold bg-gray-200 text-gray-600 hover:bg-second duration-500 hover:text-white">
                                 <a href="https://github.com/RonaldoFidelis?tab=repositories" target="_blank">Ver
                                     mais</a>
                             </span>
@@ -320,16 +320,16 @@
         </section>
         <!-- Experiência -->
         <section id="experiencia">
-            <!-- <div class="flex m-5 items-center justify-center bg-white font-poppins mb-20">
+            <div class="flex items-center justify-center bg-white font-poppins mb-20">
                 <div class="flex flex-col justify-center items-center">
-                    <h2 class="text-lg text-black font-medium">Experiência</h2>
+                    <h2 class="text-lg text-black font-bold">Experiência</h2>
                     <h3 class="text-sm text-gray-500">Experience</h3>
                 </div>
-            </div> -->
+            </div>
         </section>
-    </main>
+    </main >
     <!-- Rodapé -->
-    <footer class="text-white bg-black font-poppins">
+    <footer class="text-white bg-main font-poppins">
         <div class="grid grid-cols-1 md:grid-cols-3 p-4 md:p-10 ">
             <div class="md:col-span-1 pt-10 md:pt-0">
                 <h2 class="text-lg leading-none font-semibold ">Ronaldo Fidelis</h2>
@@ -337,14 +337,14 @@
                 <ul class="mt-3">
                     <h3>Contatos:</h3>
                     <li class="text-xs text-gray-500 leading-relaxed">
-                        <p>Whatsap: <a class="hover:text-amber-500 duration-500" href="https://wa.me/5581985162273"
+                        <p>Whatsap: <a class="hover:text-white duration-500" href="https://wa.me/5581985162273"
                                 target="_blank">(81) 98516-2273</a></p>
                     </li>
                     <li class="text-xs  text-gray-500 leading-relaxed">
                         <p>Recado: (81) 99517-6649</p>
                     </li>
                     <li class="text-xs  text-gray-500 leading-relaxed">
-                        <p>E-mail: <a class="hover:text-amber-500 duration-500"
+                        <p>E-mail: <a class="hover:text-white duration-500"
                                 href="mailto:Ronaldofidelis.ti@gmail.com"
                                 target="_blank">Ronaldofidelis.ti@gmail.com</a></p>
                     </li>
@@ -353,12 +353,12 @@
             <div class="md:col-span-2 pt-10 md:pt-2">
                 <ul class="flex md:justify-end">
                     <li
-                        class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full mx-2 hover:text-amber-500 duration-500">
+                        class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full mx-2 hover:text-git duration-500">
                         <a href="https://github.com/RonaldoFidelis" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                     </li>
                     <li
-                        class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full mx-2  hover:text-amber-500 duration-500">
+                        class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full mx-2  hover:text-linkedin duration-500">
                         <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
                     </li>
