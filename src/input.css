@@ -32,7 +32,7 @@
 
 .icon_link:hover {
     border-radius: 100%;
-    border: 2px solid #f7f7f7;
+    background: white;
 }
 
 @keyframes flutuar {

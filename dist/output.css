@@ -959,7 +959,7 @@ video {
 
 .icon_link:hover {
   border-radius: 100%;
-  border: 2px solid #f7f7f7;
+  background: white;
 }
 
 @keyframes flutuar {
@@ -1085,6 +1085,10 @@ video {
 
   .md\:h-alturaMd {
     height: 110px;
+  }
+
+  .md\:h-8 {
+    height: 2rem;
   }
 
   .md\:w-auto {
