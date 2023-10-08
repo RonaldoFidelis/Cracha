@@ -17,10 +17,18 @@ html {
 .bg{
     background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));;
 }
+.title-portfolio{
+  color: #829CA8;
+  transition: .5s;
+}
 
 .seta{
   color: #829CA8;
   transition: .5s;
+}
+
+.portfolio:hover .title-portfolio {
+  color: white;
 }
 
 .portfolio:hover .seta {

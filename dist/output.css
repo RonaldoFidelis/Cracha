@@ -591,6 +591,18 @@ video {
   height: 520px;
 }
 
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[110px\] {
+  height: 110px;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
 .w-\[175px\] {
   width: 175px;
 }
@@ -778,9 +790,18 @@ html {
   background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
 }
 
+.title-portfolio{
+  color: #829CA8;
+  transition: .5s;
+}
+
 .seta{
   color: #829CA8;
   transition: .5s;
+}
+
+.portfolio:hover .title-portfolio {
+  color: white;
 }
 
 .portfolio:hover .seta {
@@ -832,9 +853,4 @@ html {
 .hover\:border-\[\#37abe9\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(55 171 233 / var(--tw-border-opacity));
-}
-
-.hover\:text-font:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
