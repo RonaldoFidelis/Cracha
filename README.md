@@ -1,20 +1,20 @@
-<h1 align=center> PORTIFOLIO PESSOAL (Em desenvolvimento)</h1>
+<h1 align=center> Crachá </h1>
 
 <br>
 
-[cap-portfolio.webm](https://github.com/RonaldoFidelis/Portifolio-pessoal/assets/92171641/1e65ddd0-198b-486a-aba0-bc3d1d466360)
+
 
 <br>
 
-> Acessar portfolio: <a href="https://portfolio-ronaldo-fidelis.netlify.app/" target="_blank">Link</a>
+> Acessar o crachá: <a href="https://portfolio-ronaldo-fidelis.netlify.app/" target="_blank">Link</a>
 
 ## Desenvolvido por: Ronaldo Fidelis
 -  Contatos:
     - <a href="mailto:ronaldofidelis.ti@gmail.com" target="_blank">E-mail</a>
-    - <a href="https://github.com/RonaldoFidelis" target="_blank">GitHub</a>  
+    - <a href="https://github.com/RonaldoFidelis" target="_blank">GitHub</a>
 ## Objetivo
 
-- O principal objetivo foi desenvolver um portfolio pessoal, totalmente responsivo.
+- O principal objetivo foi criar um redirecionador de links.
 
 ## 🚀 Tecnologias usadas:
 
@@ -23,10 +23,4 @@
 * **[ NodeJs ](https://nodejs.org/en)**
 * **[ Html ](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
 * **[ Css ](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
-
-## 📝 Maiores aprendizados
-
-* Media Queries Css e Tailwindcss
-* Configuração de ambiente com Taildwindcss
-
 
