@@ -4,86 +4,59 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif ;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-    /* Largura da barra de rolagem */
-    background-color: #ffffff;
+.corda {
+    border-radius: 0px 0px 0px 0px;
+}
+.gradiente {
+  border-radius: 0px 0px 100% 100%;
 }
 
-::-webkit-scrollbar-thumb {
-    width: 5px;
-    background-color: #000C24;
-    /* Cor da thumb */
-
-}
-.nav{
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
-.nav-mobile{
-    box-shadow: 0px 10px 10px -1px rgb(33, 33, 33);
+.bg{
+    background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));;
 }
 
-.home {
-    box-shadow: 0px 0px 30px rgb(225, 150, 1);
+.seta{
+  color: #829CA8;
+  transition: .5s;
 }
 
-.icon_link {
-    transform: translatey(0px);
-    animation: flutuar 5s ease-in-out infinite;
+.portfolio:hover .seta {
+  color: white;
+  transform: translateX(3px);
 }
 
-.icon_link:hover {
-    border-radius: 100%;
-    background: white;
+.github{
+  color: #829CA8;
+  transition: .5s;
 }
 
-@keyframes flutuar {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-7px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
+.linkedin {
+  color: #829CA8;
+  transition: .5s;
 }
 
-.card {
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgb(160, 160, 160);
+.email {
+  color: #829CA8;
+  transition: .5s;
 }
 
-.img_card {
-    border-radius: 0px 0px 10px 10px;
+.wpp {
+  color: #829CA8;
+  transition: .5s;
 }
 
-.card-skills {
-    border-radius: 10px 0px 0px 0px;
-    box-shadow: 0px 0px 2px rgb(160, 160, 160);
-    /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
-    transition: transform 0.3s
+.active-git:hover .github {
+  color: #5C3080;
 }
-
-.card-skills:hover {
-    transform: scale(1.2);
-    z-index: 1;
+.active-link:hover .linkedin {
+  color: #126BC4;
 }
-
-.hover\:after-underline::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #011140; /* Cor do sublinhado */
-    transition: width 0.3s ease-in-out; /* Transição suave */
+.active-email:hover .email {
+  color: #D12334;
 }
-
-.hover\:after-underline:hover::after {
-    width: 100%; /* Largura total no hover */
+.active-wpp:hover .wpp {
+  color: #42E15E;
 }
-
