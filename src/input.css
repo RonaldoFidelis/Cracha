@@ -106,3 +106,15 @@ html {
   transform-origin:center;
   transform: rotate(90deg);
 }
+.btn-rotate2{
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.btn-rotate2:hover {
+  color: white;
+  transform-origin:center;
+  transform: rotate(90deg);
+}
