@@ -6,6 +6,29 @@ html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+.card-container{
+  perspective: 1000px;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all .8s ease-in-out;
+}
+
+#front {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+#back {
+  backface-visibility: hidden;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
 
 .corda {
   border-radius: 0px 0px 2px 2px;
@@ -14,10 +37,6 @@ html {
 .gradient-triangle {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-}
-
-.bg {
-  background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));;
 }
 
 .title-portfolio {
@@ -73,4 +92,17 @@ html {
 
 .active-wpp:hover .wpp {
   color: #42E15E;
+}
+
+.btn-rotate{
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.btn-rotate:hover {
+  color: white;
+  transform-origin:center;
+  transform: rotate(90deg);
 }

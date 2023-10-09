@@ -1,37 +1,27 @@
-let lista = document.querySelector('ul');
-let navMobile = document.querySelector('#nav-mob');
-let menuhamburguer = document.querySelector('.menu-hamburguer')
+const rotate = document.querySelector('.btn-rotate');
+const rotate2 = document.querySelector('.btn-rotate2');
+const card = document.querySelector('#card');
+const front = document.querySelector('#front');
+const back = document.querySelector('#back');
 
-function Menu(e) {
+front.classList.add('z-20');
+back.classList.add('z-10');
 
-    if (e.id == 'Menu') {
-        e.id = 'Close';
-        e.classList.remove("fa-solid", "fa-bars");
-        e.classList.add("fa-solid", "fa-xmark");
-        lista.classList.add('top-[30px]');
-        lista.classList.add('opacity-100');
-        navMobile.classList.add('nav-mobile')
-        
-    } else {
-        e.id = 'Menu';
-        e.classList.remove("fa-solid", "fa-xmark");
-        e.classList.add("fa-solid", "fa-bars");
-        lista.classList.remove('top-[30px]');
-        lista.classList.remove('opacity-100');
-        navMobile.classList.remove('nav-mobile')
-    }
-}
+rotate.addEventListener("click", (e) => {
+  console.log(e.target)
 
-function Close(){
-    console.log(menuhamburguer.id)
+  console.log(card.classList.value)
+  card.classList.remove('flip')
+  front.classList.remove('z-20');
+  back.classList.remove('z-10');
+});
 
-    if (menuhamburguer.id == 'Close') {
-        menuhamburguer.id = 'Menu';
-        menuhamburguer.classList.remove("fa-solid", "fa-xmark");
-        menuhamburguer.classList.add("fa-solid", "fa-bars");
-        lista.classList.remove('top-[30px]');
-        lista.classList.remove('opacity-100');
-        navMobile.classList.remove('nav-mobile')
-    }
+rotate2.addEventListener("click", (e) => {
+  console.log(e.target)
 
-}
+  console.log(card.classList.value)
+  card.classList.add('flip')
+  front.classList.add('z-20');
+  back.classList.add('z-10');
+
+});

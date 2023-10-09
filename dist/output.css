@@ -538,12 +538,8 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
-.top-\[30px\] {
-  top: 30px;
+.top-\[-10px\] {
+  top: -10px;
 }
 
 .z-10 {
@@ -556,6 +552,16 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-\[90px\] {
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .mx-auto {
@@ -607,8 +613,8 @@ video {
   height: 520px;
 }
 
-.h-\[70px\] {
-  height: 70px;
+.h-\[80px\] {
+  height: 80px;
 }
 
 .min-h-screen {
@@ -619,8 +625,8 @@ video {
   width: 175px;
 }
 
-.w-\[340px\] {
-  width: 340px;
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-\[65px\] {
@@ -633,6 +639,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -653,6 +667,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -780,10 +798,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -810,6 +824,30 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+.card-container{
+  perspective: 1000px;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all .8s ease-in-out;
+}
+
+#front {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+#back {
+  backface-visibility: hidden;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
 .corda {
   border-radius: 0px 0px 2px 2px;
 }
@@ -817,10 +855,6 @@ html {
 .gradient-triangle {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-}
-
-.bg {
-  background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
 }
 
 .title-portfolio {
@@ -876,6 +910,19 @@ html {
 
 .active-wpp:hover .wpp {
   color: #42E15E;
+}
+
+.btn-rotate{
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.btn-rotate:hover {
+  color: white;
+  transform-origin:center;
+  transform: rotate(90deg);
 }
 
 .hover\:border-\[\#38B6FF\]:hover {
