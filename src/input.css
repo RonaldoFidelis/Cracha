@@ -3,26 +3,29 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif ;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 .corda {
-    border-radius: 0px 0px 0px 0px;
-}
-.gradiente {
-  border-radius: 0px 0px 100% 100%;
+  border-radius: 0px 0px 2px 2px;
 }
 
-.bg{
-    background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));;
+.gradient-triangle {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
-.title-portfolio{
+
+.bg {
+  background-image: linear-gradient(rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));;
+}
+
+.title-portfolio {
   color: #829CA8;
   transition: .5s;
 }
 
-.seta{
+.seta {
   color: #829CA8;
   transition: .5s;
 }
@@ -36,7 +39,7 @@ html {
   transform: translateX(3px);
 }
 
-.github{
+.github {
   color: #829CA8;
   transition: .5s;
 }
@@ -59,12 +62,15 @@ html {
 .active-git:hover .github {
   color: #5C3080;
 }
+
 .active-link:hover .linkedin {
   color: #126BC4;
 }
+
 .active-email:hover .email {
   color: #D12334;
 }
+
 .active-wpp:hover .wpp {
   color: #42E15E;
 }
