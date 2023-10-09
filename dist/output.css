@@ -795,6 +795,18 @@ video {
   --tw-gradient-to: #93c5fd var(--tw-gradient-to-position);
 }
 
+.to-violet-700 {
+  --tw-gradient-to: #6d28d9 var(--tw-gradient-to-position);
+}
+
+.to-violet-500 {
+  --tw-gradient-to: #8b5cf6 var(--tw-gradient-to-position);
+}
+
+.to-violet-400 {
+  --tw-gradient-to: #a78bfa var(--tw-gradient-to-position);
+}
+
 .p-3 {
   padding: 0.75rem;
 }
